@@ -75,6 +75,7 @@
     }
 
     .logo {
+        margin-right: -40px;
         width: fit-content;
     }
 
