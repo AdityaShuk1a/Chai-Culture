@@ -81,8 +81,8 @@
     width: 100%;
     min-height: 500px;
     position: relative;
-    background-size: 600px;
     background: url("@/app/assets/about/backgroundImage.png") no-repeat center;
+    background-size: 500px;
 }
 
 .aboutUsContainer .imageContainer .img1 {
@@ -277,7 +277,7 @@
     .heroSection h3 {
         font-size: 24px;
     }
-    
+
     .heroSection h1 {
         font-size: 28px;
     }
