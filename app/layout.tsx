@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import { Geist, Geist_Mono } from "next/font/google";
+import ComingSoon from "./components/utils/ComingSoon";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 
 const geistSans = Geist({
@@ -31,6 +32,7 @@ export default function RootLayout({
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
+          <ComingSoon />
           <Header />
           {children}
           <Footer />

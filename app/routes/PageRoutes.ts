@@ -3,4 +3,5 @@ export const PageRoutes = {
   SHOP: "/shop",
   ABOUT_US: "/about",
   CONTACT_US: "/contact",
+  LOGIN_SIGNUP: "/login-signup"
 };

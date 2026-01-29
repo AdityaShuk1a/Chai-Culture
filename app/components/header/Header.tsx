@@ -5,12 +5,14 @@ import Image from "next/image";
 import { useState } from "react";
 import Drawer from "../drawer/Drawer";
 import Button from "../buttons/Button";
+import { useRouter } from "next/navigation";
 import { LogoImages } from "@/app/data/Image";
 import MenuIcon from '@mui/icons-material/Menu';
 import styles from "@/app/styles/header.module.css";
 import { PageRoutes } from "@/app/routes/PageRoutes";
 
 const Header = () => {
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   
   const drawerItems = [
@@ -51,7 +53,10 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <Button text="Login/Signup"/>
+        <Button 
+          text="Login/Signup"
+          action={() => router.push(PageRoutes.LOGIN_SIGNUP)} 
+        />
       </div>
     </div>
   );
